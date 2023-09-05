@@ -297,6 +297,10 @@ header{
 /* ... */
 
 /* Adicione estas regras de estilo para centralizar verticalmente o formulário na seção de contato */
+/* Mantenha as regras de estilo existentes */
+/* ... */
+
+/* Adicione estas regras de estilo para centralizar verticalmente o formulário e torná-lo duas vezes maior na seção de contato */
 #contato {
   display: flex;
   justify-content: center;
@@ -305,8 +309,9 @@ header{
 }
 
 .container form {
-  width: 100%;
-  max-width: 700px;
+  width: 200%; /* Torna o formulário duas vezes mais largo */
+  max-width: 1400px; /* Define o máximo para manter a legibilidade */
+  height: 200%; /* Torna o formulário duas vezes mais alto */
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
