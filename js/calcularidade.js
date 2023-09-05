@@ -1,7 +1,6 @@
 
 
-  // Função para calcular a quantidade de anos trabalhados   // Função para calcular a idade
-function calcularIdadeEAnosTrabalhados(dataNascimento, dataInicioTrabalho) {
+function calcularIdadeEAnosTrabalhando(dataNascimento, dataInicioTrabalho) {
   const hoje = new Date();
   const milissegundosNoAno = 365.25 * 24 * 60 * 60 * 1000;
 
@@ -10,13 +9,12 @@ function calcularIdadeEAnosTrabalhados(dataNascimento, dataInicioTrabalho) {
 
   return { idade, anosTrabalhando };
 }
- // Data de nascimento no formato "MM/DD/YYYY"
-const dataNascimento = new Date("19/10/1994");
-  // Data de início de trabalho na área no formato "MM/DD/YYYY"
-const dataInicioTrabalho = new Date("01/01/2020");
 
-const { idade, anosTrabalhando } = calcularIdadeEAnosTrabalhados(dataNascimento, dataInicioTrabalho);
+const dataNascimento = new Date("1994-10-19");
+const dataInicioTrabalho = new Date("2020-01-01");
+
+const { idade, anosTrabalhando } = calcularIdadeEAnosTrabalhando(dataNascimento, dataInicioTrabalho);
 
 document.getElementById("idade").textContent = idade;
-document.getElementById("anosTrabalhando").textContent = anosTrabalhando
+document.getElementById("anosTrabalhando").textContent = anosTrabalhando;
 
