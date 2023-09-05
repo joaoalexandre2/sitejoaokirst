@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>João Alexandre Kirst - Website</title>
+  </head>
+  <body>
+    <div class="background-verde">
+      <!--Header-->
+      
+      <header>
+        <!--Container-->
+       
+        <div class="container">
+         
+          <nav>
+            <div class="logo">
+              <a href="index.html">JoaoKirst</a>
+            </div>
+            <ul class="ul">
+              <li><a href="#home">Home</a></li>
+              <li><a href=".sobre-mim">Sobre</a></li>
+              <li><a href=".skill"> Minhas Habilidades</a></li>
+              <li><a href=".diferenciais"> Projetos</a></li>
+              <li><a href="#contato"> Contato</a></li>
+              <li>
+                <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5545999223845&amp;text=Ol%C3%A1%21%20Estou%20interessado%20em%20descobrir%20como%20a%20Ag%C3%AAncia%20T%C3%A2ngelo%20pode%20se%20tornar%20um%20parceiro%20estrat%C3%A9gico%20para%20o%20meu%20neg%C3%B3cio%20e%20impulsionar%20minhas%20vendas.%20Pode%20me%20fornecer%20mais%20informa%C3%A7%C3%B5es%3F"
+                 target="_new" class="laranja">
+                
+                  <button class="btn-gradiente">
+                    Vamos Iniciar Um Projeto
+                  </button></a
+                >
+              </li>
+            </ul>
+            <div class="menu-icon">
+              <img src="img/menu.png" alt="ícone de menu" />
+            </div>
+          </nav>
+          
+        </div>
+        <!--Fecha Container-->
+      </header>
+    
+      <!-- Fecha Header-->
+      <!--Main-->
+      <main id="home">
+        <br><br>
+        <!--container-->
+        <div class="container">
+          <!-- main text-->
+          <div class="main-text">
+            <div class="textojoao">João Alexandre Desenvolve Aplicações:</div>
+            <div id="texto-autodigitando"><br /></div>
+
+            <script>
+              const textosAlvo = ["PHP", "CSS", "JavaScript"];
+              const elementoAlvo = document.getElementById(
+                "texto-autodigitando"
+              );
+
+              let indiceTexto = 0;
+              let indiceCaractere = 0;
+              let apagando = false;
+              let intervaloExibicao = 300; // Intervalo entre exibição de caracteres
+              let intervaloApagar = 300; // Intervalo entre apagar caracteres
+
+              function exibirProximoTexto() {
+                apagando = false;
+                elementoAlvo.innerHTML = ""; // Limpa o elemento antes de exibir novo texto
+                indiceCaractere = 0;
+
+                const textoAtual = textosAlvo[indiceTexto];
+
+                const exibirCaractere = () => {
+                  if (indiceCaractere < textoAtual.length) {
+                    elementoAlvo.innerHTML +=
+                      textoAtual.charAt(indiceCaractere);
+                    indiceCaractere++;
+                    setTimeout(exibirCaractere, intervaloExibicao);
+                  } else {
+                    apagando = true;
+                    setTimeout(apagarTexto, intervaloExibicao); // Tempo antes de começar a apagar
+                  }
+                };
+
+                exibirCaractere();
+              }
+
+              function apagarTexto() {
+                if (apagando && elementoAlvo.innerHTML.length > 0) {
+                  elementoAlvo.innerHTML = elementoAlvo.innerHTML.slice(0, -1);
+                  setTimeout(apagarTexto, intervaloApagar);
+                } else {
+                  indiceTexto = (indiceTexto + 1) % textosAlvo.length;
+                  exibirProximoTexto();
+                }
+              }
+
+              // Inicia o processo de exibição e apagamento após o carregamento da página
+              document.addEventListener("DOMContentLoaded", function () {
+                exibirProximoTexto();
+              });
+            </script>
+            <div>
+                <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5545999223845&amp;text=Ol%C3%A1%21%20Estou%20interessado%20em%20descobrir%20como%20a%20Ag%C3%AAncia%20T%C3%A2ngelo%20pode%20se%20tornar%20um%20parceiro%20estrat%C3%A9gico%20para%20o%20meu%20neg%C3%B3cio%20e%20impulsionar%20minhas%20vendas.%20Pode%20me%20fornecer%20mais%20informa%C3%A7%C3%B5es%3F"
+                 target="_new" class="laranja">
+              <button class="btn-gradiente">Me contate</button>
+              </a>
+            </div>
+          </div>
+          <!--Fecha main text-->
+          <!--Main img-->
+          <div class="main-img">
+            <img
+              src="img/img1.png"
+              alt="Primeira Imagem"
+              width="763"
+              height="608"
+            />
+          </div>
+
+          <!--Fecha main img-->
+        </div>
+        <!-- fecha container-->
+      </main>
+      <!--Fecha Header-->
+    </div>
+    
+    <!-- end background verde-->
+    <!--diferenciais-->
+    <!--Sobre mim-->
+    <div class="background-verde">
+    <div class="verde--">
+      <section class="sobre-mim">
+        <div class="container">
+          <div class="joao-img">
+            <img src="img/casa.png" alt="Minha Imagem" />
+          </div>
+          <div class="joao-text">
+            <h2>Um Pouco Sobre</h2>
+            <p>
+              Olá Meu João Alexandre Kirst, tenho <span id="idade"></span> anos<br /><br>
+              Sou formado em análise desenvolvimento de sistemas, tenho
+              especialização em Desenvolvimento Web e Dispositivos Móveis. <br> <br>
+              Trabalho a  <span id="anosTrabalhando"></span> anos com Desenvolvimento Web.<br><br>
+
+              Sempre estou em busca de aprender.
+
+              
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  
+
+    <!--Fecha sobre mim-->
+
+
+    <!--Skils -->
+    <div class="background-verde">
+      <br><br><br>
+      <h1>Minhas Habilidades</h1>
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="progress">
+          <div class="progress-bar" data-level="90"></div>
+      </div>
+  </div>
+  <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="progress">
+          <div class="progress-bar" data-level="80"></div>
+      </div>
+  </div>
+  <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="progress">
+          <div class="progress-bar" data-level="75"></div>
+      </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-name">Java</div>
+    <div class="progress">
+        <div class="progress-bar" data-level="60"></div>
+    </div>
+</div>
+
+<div class="skill">
+  <div class="skill-name">PHP</div>
+  <div class="progress">
+      <div class="progress-bar" data-level="70"></div>
+  </div>
+</div>
+<br><br>
+    <!-- Fecha skils-->
+    <h1>Projetos Realizados</h1>
+    <section class="diferenciais">
+       
+       <br><br>
+      <div class="container carousel">
+        <div class="card">
+          <img src="img/medal.png" alt="medalha" />
+          <h3 class="titulo">Javascript</h3>
+          <p>Ele é utilizado para dara a vida a nossas aplicações!!!!</p>
+        </div>
+        <!--Fecha card-->
+        <div class="card">
+          <img src="img/24h.png" alt="24 horas" />
+          <h3 class="titulo">IELB</h3>
+          <p>Site da Igreja para Menbros e comunidade</p>
+        </div>
+        <!--Fecha card-->
+        <div class="card">
+          <img src="img/caixa.png" alt="caixa" />
+          <h3 class="titulo">DEBONA ODONTO</h3>
+          <p>Site Para Facilitar e Mostrar os Serviços do Dr Giovane</p>
+        </div>
+        <!--Fecha card-->
+        <div class="card">
+          <img src="img/medal.png" alt="medalha" />
+          <h3 class="titulo">Javascript</h3>
+          <p>Ele é utilizado para dara a vida a nossas aplicações!!!!</p>
+        </div>
+        <!--Fecha card-->
+
+        <!--Fecha card-->
+    </section>
+    
+ 
+    <div class="background-verde" id="contato">
+      <div class="container">
+        <br><br>
+        <h1>Contato</h1>
+        <br><br>
+        <form onsubmit="sendEmail(); reset(); return false">
+            <div class="form-control">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Nome" required>
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="form-control">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" placeholder="Telefone" required>
+            </div>
+            <div class="form-control">
+                <label for="message">Mensagem:</label>
+                <textarea name="message" rows="4" id="message" placeholder="Envie sua mensagem" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <br><br>
+  </div>
+    
+
+
+
+
+    <!--diferenciais-->
+
+    <!--Fecha card-->
+   
+
+    <!--Inicio do footer-->
+    <footer class="footer">
+      <div class="container">
+          <div class="links">
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+              <a href="#"><i class="fa fa-github"></i></a>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+          </div>
+          <br>
+          <p>Desenvolvido por João  Kirst</p>
+      </div>
+  </footer>
+
+    
+
+    <!-- Fecha footer-->
+
+    <!-- Fecha Portfolio-->
+
+    <script>
+      // Função para rolar até uma seção com um deslocamento personalizado
+      function scrollToSection(sectionId, offset) {
+        const section = document.querySelector(sectionId);
+        if (section) {
+          const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: sectionPosition - offset,
+            behavior: 'smooth'
+          });
+        }
+      }
+    
+      // Adicione eventos de clique aos links do menu com offsets personalizados
+      document.addEventListener('DOMContentLoaded', function () {
+        const menuLinks = document.querySelectorAll('.ul a');
+        menuLinks.forEach(function (link) {
+          link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetSectionId = link.getAttribute('href');
+            let offset = 170; // Valor padrão para a maioria das âncoras
+    
+            // Ajuste o offset para a âncora "Contato"
+            if (targetSectionId === '#contato') {
+              offset = 100; // Ajuste aqui para o valor desejado
+            }
+    
+            scrollToSection(targetSectionId, offset);
+          });
+        });
+      });
+    </script>
+
+
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calcularidade.js"></script>
+    <script src="js/skils.js"></script>
+    <script src="js/carrousel.js"></script>
+  </body>
+</html>
