@@ -2,10 +2,10 @@
 
 function calcularIdadeEAnosTrabalhando(dataNascimento, dataInicioTrabalho) {
   const hoje = new Date();
-  const milissegundosNoAno = 365 * 24 * 60 * 60 * 1000;
+  const calculaAno = 365 * 24 * 60 * 60 * 1000;
 
-  const idade = Math.floor((hoje - dataNascimento) / milissegundosNoAno);
-  const anosTrabalhando = Math.floor((hoje - dataInicioTrabalho) / milissegundosNoAno);
+  const idade = Math.floor((hoje - dataNascimento) / calculaAno);
+  const anosTrabalhando = Math.floor((hoje - dataInicioTrabalho) / calculaAno);
 
   return { idade, anosTrabalhando };
 }
