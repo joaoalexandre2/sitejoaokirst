@@ -310,7 +310,7 @@ header{
 
 .container form {
   width: 200%; /* Torna o formulário duas vezes mais largo */
-  max-width: 1400px; /* Define o máximo para manter a legibilidade */
+  width: 600px; /* Define o máximo para manter a legibilidade */
   height: 200%; /* Torna o formulário duas vezes mais alto */
   background-color: #ffffff;
   padding: 20px;
