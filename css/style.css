@@ -492,8 +492,8 @@ footer .container .links{
      .menu-icon {
     display: block; /* Certifique-se de que o ícone do menu esteja visível */
     position: absolute;
-    top: 0;
-    right: 0; /* Posicione o ícone à direita */
+    top: 10;
+    right: 10; /* Posicione o ícone à direita */
   }
      .ul{
         position: fixed;
