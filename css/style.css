@@ -202,8 +202,6 @@ main .container{
     display: none;
     position: relative;
     z-index: 10;
-    margin-left:140px;
-
 }
 
 header{
@@ -490,6 +488,13 @@ footer .container .links{
     .menu-icon{
         display: block;
     }
+
+     .menu-icon {
+    display: block; /* Certifique-se de que o ícone do menu esteja visível */
+    position: absolute;
+    top: 0;
+    right: 0; /* Posicione o ícone à direita */
+  }
      .ul{
         position: fixed;
         background: var(--verde-escuro);
