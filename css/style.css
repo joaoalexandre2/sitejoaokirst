@@ -289,7 +289,7 @@ header{
 
 /* formulario */
 
-/* Adicione essas regras de estilo para centralizar o formulário na seção de contato */
+/* Adicione essas regras de estilo para centralizar o formulário na seção de  */
 /* Mantenha as regras de estilo existentes */
 /* ... */
 
@@ -668,6 +668,10 @@ footer .container .links{
         margin-left: auto;
         margin-left:0px;
       }
+
+    #contato {
+  min-height: 58vh;
+}
 
 }
 
