@@ -490,10 +490,15 @@ footer .container .links{
     }
 
      .menu-icon {
-    display: block; /* Certifique-se de que o ícone do menu esteja visível */
-    position: absolute;
-    top: 10;
-    right: 10; /* Posicione o ícone à direita */
+    position: fixed;
+    display: inherit;
+    top: 0;
+    top: 15px;
+    left: 0;
+    width: 94.7%;
+    height: 50px;
+    background-size: 55px;
+    z-index: 99;
   }
      .ul{
         position: fixed;
