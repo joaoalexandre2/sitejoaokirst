@@ -105,6 +105,7 @@ header {
     color: white;
     border: none;
     cursor: pointer;
+    margin-left:20px;
     background: var(--degrade-btn);
     
 }
