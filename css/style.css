@@ -554,9 +554,7 @@ footer .container .links{
     }
 
     .btn-gradiente{
-        padding: 10px 40px;
-        font-size: 20px;
-        font-weight: bold;
+       display:none;
     }
 
     .diferenciais .container{
