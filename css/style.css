@@ -668,6 +668,12 @@ footer .container .links{
         margin-left:0px;
       }
 
+    .main-text div {
+    display: flex;
+    align-items: center;
+    margin-top: 47px;
+}
+
     #contato {
   min-height: 58vh;
 }
